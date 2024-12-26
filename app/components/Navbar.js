@@ -29,7 +29,7 @@ const Navbar = () => {
     <div className='w-full px-4 lg:px-6 xl:px-10 h-[48px] sm:h-[96px] flex items-center'>
       <div className='w-full max-w-[1600px] mx-auto flex items-center justify-between'>
         <Link href='/'>
-          <Image src='/assets/logo.svg' alt='logo' width={208} height={53} className='sm:w-[208px] w-[110px] h-[30px]' />
+          <Image src='/assets/logo.svg' alt='logo' width={208} height={53} className='sm:w-[208px] w-[110px] sm:h-[53px] h-[30px]' />
         </Link>
         <ul className='hidden lg:flex items-center gap-7'>
           <li><Link href='/' className='text-[#210F0F] text-[16px] font-normal leading-[20px]'>Home</Link></li>
