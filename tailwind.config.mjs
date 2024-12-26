@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily:{
         workSpace: ["'Work Sans'", "sans-serif"],
+        inter: ["'Inter'", "sans-serif"],
       }
     },
   },

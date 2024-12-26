@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <h1>Font Lexend</h1>
-      <h1 className="font-workSpace">Font Work Space</h1>
-      <Hero/>
+      {/* <Hero/> */}
       <Footer/>
     </div>
   );
