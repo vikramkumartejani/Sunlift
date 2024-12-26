@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="/assets/hero-bg.png"
