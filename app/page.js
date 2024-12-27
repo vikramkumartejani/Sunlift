@@ -1,12 +1,17 @@
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import AboutSunLifterClub from "./components/home/AboutSunLifterClub";
+import FrequentlyAskedQuestions from "./components/home/FrequentlyAskedQuestions";
+import GetAppNow from "./components/home/GetAppNow";
+import ViewAvailableRoutine from "./components/home/ViewAvailableRoutine";
 
 export default function Home() {
   return (
-    <div>
-     
+    <div>     
       <Hero/>
-      <Footer/>
+      <AboutSunLifterClub/>
+      <ViewAvailableRoutine/>
+      <GetAppNow/>
+      <FrequentlyAskedQuestions/>
     </div>
   );
 }

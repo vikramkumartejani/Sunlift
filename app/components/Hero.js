@@ -16,7 +16,7 @@ const Hero = () => {
           style={{ backgroundPosition: 'right', objectFit: "cover" }}
         />
       </div>
-      <div className=' px-4 lg:px-6 xl:px-10 '>
+      <div className='px-4 lg:px-6 xl:px-10'>
         <div className="relative z-10 mx-auto max-w-[1600px]">
           <div className="grid grid-cols-1 pt-[216px] items-center gap-12 lg:grid-cols-2">
             <div className="absolute -left-[20px] top-[120px] sm:top-auto max-w-[1600px] w-full">
