@@ -18,43 +18,43 @@ const Page = () => {
                 <img
                     src="/assets/login.png"
                     alt="Login background"
-                    className="absolute inset-0 h-full w-full object-cover opacity-80 z-1"  // adjusted opacity
+                    className="absolute inset-0 h-full w-full object-cover opacity-80 bg-right z-1"
                 />
             </div>
 
             {/* Content */}
-            <div className="flex items-center justify-center min-h-screen px-4 lg:px-6 xl:px-10 relative z-20">
+            <div className="py-[105px] flex items-center justify-center min-h-screen px-5 lg:px-6 xl:px-10 relative z-20">
                 <div
-                    className="relative w-full max-w-[695px] bg-white/50 rounded-[30px] m-auto py-[100px]"
+                    className="relative w-full px-4 max-w-[695px] bg-white/50 rounded-[30px] m-auto py-5 md:py-10 lg:py-20 xl:py-[100px]"
                     style={{ backdropFilter: "blur(116px)" }}
                 >
                     <div className="max-w-[475px] mx-auto">
                         <div className="flex items-center justify-center">
-                            <Image src="/assets/logo.svg" alt="logo" width={262} height={67} />
+                            <Image src="/assets/logo.svg" alt="logo" width={262} height={67} className='md:w-[262px] md:h-[67px] w-[181px] h-[46px]' />
                         </div>
-                        <form className="mt-[50px] flex flex-col gap-2">
+                        <form className="mt-8 md:mt-[50px] flex flex-col gap-2">
                             <label className="text-[#212529] text-[14px] font-normal leading-[17.5px]">Email</label>
-                            <div className="border border-[#D8D8D8] bg-[#F8F9FA99] rounded-[72px] h-[52px] flex items-center px-3.5 gap-3">
-                                <Image src="/icons/user.svg" alt="user" width={24} height={24} />
+                            <div className="border border-[#D8D8D8] bg-[#F8F9FA99] rounded-[72px] h-[48px] sm:h-[52px] flex items-center px-3.5 gap-3">
+                                <Image src="/icons/user.svg" alt="user" width={24} height={24} className='sm:w-[24px] sm:h-[24px] w-[20px] h-[20px]' />
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="bg-transparent w-full h-full text-black placeholder:text-[#868E96] outline-none text-[16px] leading-[20px] font-normal"
+                                    className="bg-transparent w-full h-full text-black placeholder:text-[#868E96] outline-none text-[14px] sm:text-[16px] sm:leading-[20px] font-normal"
                                 />
                             </div>
                             <label className="mt-4 text-[#212529] text-[14px] font-normal leading-[17.5px]">Password</label>
-                            <div className="border border-[#D8D8D8] bg-[#F8F9FA99] rounded-[72px] h-[52px] flex items-center px-3.5 gap-3">
-                                <Image src="/icons/lock.svg" alt="user" width={24} height={24} />
+                            <div className="border border-[#D8D8D8] bg-[#F8F9FA99] rounded-[72px] h-[48px] sm:h-[52px] flex items-center px-3.5 gap-3">
+                                <Image src="/icons/lock.svg" alt="user" width={24} height={24} className='sm:w-[24px] sm:h-[24px] w-[20px] h-[20px]' />
                                 <input
                                     type="password"
                                     placeholder="Password"
-                                    className="bg-transparent w-full h-full text-black placeholder:text-[#868E96] outline-none text-[16px] leading-[20px] font-normal"
+                                    className="bg-transparent w-full h-full text-black placeholder:text-[#868E96] outline-none text-[14px] sm:text-[16px] sm:leading-[20px] font-normal"
                                 />
                             </div>
-                            <div className="mt-[18px] mb-6 w-full flex items-end justify-end">
+                            <div className="mt-[18px] mb-4 sm:mb-6 w-full flex items-end justify-end">
                                 <Link
                                     href="/forgot-password"
-                                    className="text-[#EB3340] hover:underline transition duration-300 text-[16px] leading-[20px] font-normal tracking-[-0.02em]"
+                                    className="text-[#EB3340] hover:underline transition duration-300 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal tracking-[-0.02em]"
                                 >
                                     Forgot Password?
                                 </Link>
@@ -62,19 +62,19 @@ const Page = () => {
 
                             <Link
                                 href="/profile"
-                                className="bg-black w-full h-[56px] rounded-[43px] text-white text-[18px] leading-[20px] font-medium flex items-center gap-1 justify-center"
+                                className="bg-black w-full h-[56px] rounded-[43px] text-white text-[14px] sm:text-[18px] sm:leading-[20px] font-medium flex items-center gap-1 justify-center"
                             >
-                                Login<IoIosArrowForward size={20} />
+                                Login<IoIosArrowForward className='text-[16px] sm:text-[20px]' />
                             </Link>
                         </form>
 
                         <div className="flex items-center justify-center mt-6">
-                            <h2 className="pr-1 text-[#7F7F8A] text-[16px] leading-[20px] tracking-[-0.02em] font-normal">
+                            <h2 className="pr-1 text-[#7F7F8A] text-[14px] sm:text-[16px] sm:leading-[20px] tracking-[-0.02em] font-normal">
                                 Don’t have an account?
                             </h2>{" "}
                             <Link
                                 href="sign-up"
-                                className="text-[#EB3340] hover:underline transition duration-300 text-[16px] leading-[20px] tracking-[-0.02em] font-semibold"
+                                className="text-[#EB3340] hover:underline transition duration-300 text-[14px] sm:text-[16px] sm:leading-[20px] tracking-[-0.02em] font-semibold"
                             >
                                 Sign Up
                             </Link>
