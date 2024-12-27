@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
         <ul className='hidden lg:flex items-center gap-7'>
           <li><Link href='/' className='text-[#210F0F] text-[16px] font-normal leading-[20px]'>Home</Link></li>
-          <li><Link href='/' className='text-[#210F0F] text-[16px] font-normal leading-[20px]'>Available Rountines</Link></li>
+          <li><Link href='/available-routines' className='text-[#210F0F] text-[16px] font-normal leading-[20px]'>Available Rountines</Link></li>
         </ul>
         <div className='hidden lg:flex items-center gap-5'>
           <Link href='/login' className='flex items-center gap-2.5 text-black text-[18px] font-normal leading-[21.78px] font-inter'>
@@ -76,7 +76,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href='/'
+              href='/available-routines'
               className='text-black text-[24px] font-normal leading-[30px] pb-[25px] border-b border-[#EAEAEA]'
             >
               Available Rountines
