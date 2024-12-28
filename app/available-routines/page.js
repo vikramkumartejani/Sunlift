@@ -15,7 +15,7 @@ const AvailableRoutines = () => {
             <div
                 className="relative bg-[url('/assets/mobile-view.svg')] sm:bg-[url('/assets/available-workout-routines.png')] bg-cover bg-no-repeat"
             >
-                <div className='bg-black/20 inset-0 w-full h-full absolute'></div>
+                <div className='bg-black/10 inset-0 w-full h-full absolute'></div>
                 <div className="px-4 lg:px-6 xl:px-10 relative z-40">
                     <div className="max-w-[1600px] mx-auto">
                         <div className="max-w-[512px] pt-[175px] pb-[72px] sm:py-[152px]">

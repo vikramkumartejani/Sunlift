@@ -40,7 +40,7 @@ const Navbar = () => {
             <Image src='/icons/profile.svg' alt='profile' width={25} height={25} />
             Login / Register
           </Link>
-          <button className='bg-[#000000] w-[208px] h-[56px] text-white text-[18px] font-medium leading-[20px] rounded-[56px]'>Go to Dashboard</button>
+          <Link href='/dashboard' className='bg-[#000000] flex items-center justify-center w-[208px] h-[56px] text-white text-[18px] font-medium leading-[20px] rounded-[56px]'>Go to Dashboard</Link>
         </div>
         <div className='flex lg:hidden items-center gap-3'>
           <Link href='/login'>
@@ -84,9 +84,9 @@ const Navbar = () => {
           </nav>
 
           <div className='mt-10'>
-            <button className='w-[180px] h-[50px] bg-black text-white text-[16px] font-normal leading-[14px] rounded-[30px]'>
+            <Link href='/dashboard' className='w-[180px] flex items-center justify-center h-[50px] bg-black text-white text-[16px] font-normal leading-[14px] rounded-[30px]'>
               Go to Dashboard
-            </button>
+            </Link>
           </div>
         </div>
       </div>
