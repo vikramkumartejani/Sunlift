@@ -20,7 +20,7 @@ const Footer = () => {
               <h2 className='text-white text-[16px] sm:text-[18px] leading-[22.5px] font-normal mb-3 sm:mb-[22px]'>Quick Links</h2>
               <div className='flex items-start flex-col gap-2.5 sm:gap-3'>
                 <Link href='/' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Home</Link>
-                <Link href='/available-rountines' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Available Rountines</Link>
+                <Link href='/available-routines' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Available Rountines</Link>
                 <Link href='/create-new-program' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Create Program</Link>
                 <Link href='/dashboard' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Dashboard</Link>
               </div>
