@@ -21,7 +21,7 @@ const Footer = () => {
               <div className='flex items-start flex-col gap-2.5 sm:gap-3'>
                 <Link href='/' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Home</Link>
                 <Link href='/available-rountines' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Available Rountines</Link>
-                <Link href='/create-program' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Create Program</Link>
+                <Link href='/create-new-program' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Create Program</Link>
                 <Link href='/dashboard' className='text-white/60 text-[14px] sm:text-[16px] sm:leading-[20px] font-normal'>Dashboard</Link>
               </div>
             </div>
