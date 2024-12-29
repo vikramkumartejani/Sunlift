@@ -3,6 +3,7 @@ import DropdownCustom from '../DropdownCustom';
 import CustomDropdownTwo from '../CustomDropdownTwo';
 import Image from 'next/image';
 import { IoIosArrowForward } from 'react-icons/io';
+import NumberInput from '../NumberInput';
 
 const ViewAvailableRoutine = () => {
     const typesOptions = ['Type 1', 'Type 2', 'Type 3'];
@@ -57,18 +58,10 @@ const ViewAvailableRoutine = () => {
                         </div>
                         <div className='w-full flex items-center gap-3 lg:gap-7'>
                             <div className='max-w-[341px] w-full'>
-                                <CustomDropdownTwo
-                                    label="Min Price"
-                                    options={minpriceOptions}
-                                    placeholder="Min Price"
-                                />
+                                <NumberInput placeholder="Min Price" />
                             </div>
                             <div className='max-w-[453px] w-full'>
-                                <CustomDropdownTwo
-                                    label="Max Price"
-                                    options={maxpriceOptions}
-                                    placeholder="Max Price"
-                                />
+                                <NumberInput placeholder="Max Price" />
                             </div>
                         </div>
                     </div>

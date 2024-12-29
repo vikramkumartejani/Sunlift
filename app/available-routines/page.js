@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import DropdownCustom from '../components/DropdownCustom'
 import CustomDropdownTwo from '../components/CustomDropdownTwo'
 import ViewAvailableRoutine from './ViewAvailableRoutine'
+import NumberInput from '../components/NumberInput'
 
 const AvailableRoutines = () => {
     const typesOptions = ['Type 1', 'Type 2', 'Type 3'];
@@ -48,18 +49,10 @@ const AvailableRoutines = () => {
                             </div>
                             <div className='w-full flex items-center gap-3 lg:gap-7'>
                                 <div className='max-w-[341px] w-full'>
-                                    <CustomDropdownTwo
-                                        label="Min Price"
-                                        options={minpriceOptions}
-                                        placeholder="Min Price"
-                                    />
+                                    <NumberInput placeholder="Min Price" />
                                 </div>
                                 <div className='max-w-[453px] w-full'>
-                                    <CustomDropdownTwo
-                                        label="Max Price"
-                                        options={maxpriceOptions}
-                                        placeholder="Max Price"
-                                    />
+                                    <NumberInput placeholder="Max Price" />
                                 </div>
                             </div>
                         </div>

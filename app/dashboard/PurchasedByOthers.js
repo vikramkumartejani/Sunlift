@@ -38,7 +38,7 @@ const PurchasedByOthers = () => {
             <h1 className='text-[#000000] text-[24px] sm:text-[30px] md:text-[40px] lg:text-[60px] lg:leading-[75px] font-semibold tracking-[-0.02em] mb-6 md:mb-[51px]'>Purchased By Others</h1>
 
             <div className='max-w-[1180px] w-full'>
-                <div className="overflow-hidden rounded-2xl border border-[#E9E9E9]">
+                <div className="overflow-hidden md:block hidden rounded-2xl border border-[#E9E9E9]">
                     <div className="overflow-x-auto">
                         <table className="min-w-full border-collapse">
                             <thead className="border-b border-[#E9E9E9]">
@@ -68,6 +68,69 @@ const PurchasedByOthers = () => {
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div className="md:hidden grid gap-4">
+                    {programs.map((program, index) => (
+                        <div
+                            key={index}
+                            className="border border-[#E9E9E9] bg-white rounded-[16px] w-full p-5"
+                        >
+                            <div className="flex items-start justify-between gap-3">
+                                <div>
+                                    <h3 className="text-[#7F7F8A] text-[12px] font-medium leading-[18px] uppercase">
+                                        Name
+                                    </h3>
+                                    <h2 className="text-[#292933] text-[14px] leading-[22px] font-normal mt-1">
+                                        {program.name}
+                                    </h2>
+                                </div>
+                                <h2 className="text-[#292933] text-[13px] font-normal leading-[22px]">
+                                    {program.duration}
+                                </h2>
+                            </div>
+                            <div className="my-4">
+                                <h3 className="text-[#7F7F8A] text-[12px] font-medium leading-[18px] uppercase">
+                                    Type
+                                </h3>
+                                <h2 className="text-[#292933] text-[14px] leading-[22px] font-normal mt-1">
+                                    {program.type}
+                                </h2>
+                            </div>
+                            <div className="my-4">
+                                <h3 className="text-[#7F7F8A] text-[12px] font-medium leading-[18px] uppercase">
+                                Username
+                                </h3>
+                                <h2 className="text-[#292933] text-[16px] leading-[22px] font-normal mt-1">
+                                    {program.username}
+                                </h2>
+                            </div>
+                            <div className="my-4">
+                                <h3 className="text-[#7F7F8A] text-[12px] font-medium leading-[18px] uppercase">
+                                    Last Active
+                                </h3>
+                                <h2 className="text-[#292933] text-[16px] leading-[22px] font-normal mt-1">
+                                    {program.lastactive}
+                                </h2>
+                            </div>
+                            <h2 className="text-[#292933] text-[16px] leading-[22px] font-normal mb-4">
+                                {program.price}
+                            </h2>
+                            <div className='flex flex-col gap-4'>
+                                <a
+                                    href="/view"
+                                    className="text-[#EB3340] underline underline-offset-2 text-[16px] font-medium leading-[20px]"
+                                >
+                                    View
+                                </a>
+                                <a
+                                    href="/edit"
+                                    className=" text-[#EB3340] underline underline-offset-2 text-[16px] font-medium leading-[20px]"
+                                >
+                                    Edit
+                                </a>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

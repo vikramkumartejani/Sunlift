@@ -17,7 +17,7 @@ const PublishedRoutines = () => {
             price: "$99.99",
         },
         {
-            name: "Intermediate Strength Program",
+            name: "Ultimate Squat Program",
             type: "Strength Training",
             duration: "25 Min",
             price: "$99.99",
@@ -42,7 +42,7 @@ const PublishedRoutines = () => {
             </div>
 
             <div className='max-w-[1180px] w-full'>
-                <div className="overflow-hidden rounded-2xl border border-[#E9E9E9]">
+                <div className="overflow-hidden rounded-2xl md:block hidden border border-[#E9E9E9]">
                     <div className="overflow-x-auto">
                         <table className="min-w-full border-collapse">
                             <thead className="border-b border-[#E9E9E9]">
@@ -69,6 +69,46 @@ const PublishedRoutines = () => {
                             </tbody>
                         </table>
                     </div>
+                </div>
+
+                <div className="md:hidden grid gap-4">
+                    {programs.map((program, index) => (
+                        <div
+                            key={index}
+                            className="border border-[#E9E9E9] bg-white rounded-[16px] w-full p-5"
+                        >
+                            <div className="flex items-start justify-between gap-3">
+                                <div>
+                                    <h3 className="text-[#7F7F8A] text-[12px] font-medium leading-[18px] uppercase">
+                                        Name
+                                    </h3>
+                                    <h2 className="text-[#292933] text-[14px] leading-[22px] font-normal mt-1">
+                                        {program.name}
+                                    </h2>
+                                </div>
+                                <h2 className="text-[#292933] text-[13px] font-normal leading-[22px]">
+                                    {program.duration}
+                                </h2>
+                            </div>
+                            <div className="my-4">
+                                <h3 className="text-[#7F7F8A] text-[12px] font-medium leading-[18px] uppercase">
+                                    Type
+                                </h3>
+                                <h2 className="text-[#292933] text-[14px] leading-[22px] font-normal mt-1">
+                                    {program.type}
+                                </h2>
+                            </div>
+                            <h2 className="text-[#292933] text-[16px] leading-[22px] font-normal mb-4">
+                                {program.price}
+                            </h2>
+                            <a
+                                href="/edit"
+                                className="text-[#EB3340] underline underline-offset-2 text-[16px] font-medium leading-[20px]"
+                            >
+                                Edit
+                            </a>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
