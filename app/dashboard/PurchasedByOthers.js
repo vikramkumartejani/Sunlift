@@ -38,6 +38,7 @@ const PurchasedByOthers = () => {
             <h1 className='text-[#000000] text-[24px] sm:text-[30px] md:text-[40px] lg:text-[60px] lg:leading-[75px] font-semibold tracking-[-0.02em] mb-6 md:mb-[51px]'>Purchased By Others</h1>
 
             <div className='max-w-[1180px] w-full'>
+                {/* Desktop Design */}
                 <div className="overflow-hidden md:block hidden rounded-2xl border border-[#E9E9E9]">
                     <div className="overflow-x-auto">
                         <table className="min-w-full border-collapse">
@@ -69,6 +70,7 @@ const PurchasedByOthers = () => {
                         </table>
                     </div>
                 </div>
+                {/* Mobile Design */}
                 <div className="md:hidden grid gap-4">
                     {programs.map((program, index) => (
                         <div
@@ -98,7 +100,7 @@ const PurchasedByOthers = () => {
                             </div>
                             <div className="my-4">
                                 <h3 className="text-[#7F7F8A] text-[12px] font-medium leading-[18px] uppercase">
-                                Username
+                                    Username
                                 </h3>
                                 <h2 className="text-[#292933] text-[16px] leading-[22px] font-normal mt-1">
                                     {program.username}

@@ -42,6 +42,7 @@ const PublishedRoutines = () => {
             </div>
 
             <div className='max-w-[1180px] w-full'>
+                {/* Desktop Design */}
                 <div className="overflow-hidden rounded-2xl md:block hidden border border-[#E9E9E9]">
                     <div className="overflow-x-auto">
                         <table className="min-w-full border-collapse">
@@ -70,7 +71,7 @@ const PublishedRoutines = () => {
                         </table>
                     </div>
                 </div>
-
+                {/* Mobile Design */}
                 <div className="md:hidden grid gap-4">
                     {programs.map((program, index) => (
                         <div
