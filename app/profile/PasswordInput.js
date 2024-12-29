@@ -12,14 +12,14 @@ const PasswordInput = ({ label, placeholder, value, onChange }) => {
 
   return (
     <div className='w-full flex flex-col gap-2'>
-      <label className='text-[#212529] text-[16px] font-medium leading-[20px]'>{label}</label>
-      <div className='w-full h-[50px] rounded-[60px] px-5 bg-white flex items-center gap-2'>
+      <label className='text-[#212529] text-[14px] sm:text-[16px] font-medium leading-[20px]'>{label}</label>
+      <div className='w-full h-[45px] sm:h-[50px] rounded-[60px] px-5 bg-white flex items-center gap-2'>
         <input
           type={showPassword ? 'text' : 'password'}
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className='h-full w-full outline-none placeholder:text-[#868E96] text-black text-[16px] font-normal leading-[20px]'
+          className='h-full w-full outline-none placeholder:text-[#868E96] text-black text-[14px] sm:text-[16px] font-normal leading-[20px]'
         />
         <button onClick={togglePasswordVisibility}>
           <Image
