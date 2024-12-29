@@ -3,7 +3,7 @@ import NumberInput from './NumberInput'
 import AddExercise from './AddExercise';
 
 const ExerciseOneRepMaxes = () => {
-    const typesOptions = ['Exercise 1', 'Exercise 2', 'Exercise 3'];
+    const typesOptions = ['Squat', 'Bench', 'Deadlift'];
     return (
         <div className='border-b border-[#D9D9D9] pb-6 sm:pb-8 md:pb-10 lg:pb-[60px] mt-8 sm:mt-8 md:mt-10 lg:mt-[60px]'>
             <h1 className='text-[#060606] text-[24px] md:text-[32px] md:leading-[40px] font-semibold tracking-[0.01em]'>Exercise One Rep Maxes</h1>
